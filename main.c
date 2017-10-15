@@ -47,12 +47,12 @@ int timeToSeconds(time tempo){
 int timeFromTime(time tempo1, time tempo2){
     int result;
     
-    int tempoT, tempoMid;
+    int secondi1, secondi2;
     
-    tempoT = timeToSeconds(tempo1);
-    tempoMid = timeToSeconds(tempo2);
+    secondi1 = timeToSeconds(tempo1);
+    secondi2 = timeToSeconds(tempo2);
     
-    result = abs(tempoT-tempoMid);  //calcola la differenza tra i due orari
+    result = abs(secondi1-secondi2);  //calcola la differenza tra i due orari
     
     return result;
 }
